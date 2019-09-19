@@ -1,11 +1,11 @@
 {
-    "name": "TailwindStarterTemplate",
+    "name": "blog-template",
     "version": "1.0.0",
-    "description": "Tailwind Starter Template",
+    "description": "Simple blog template using Tailwind CSS",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/tailwindtoolbox/StarterTemplate.git"
+        "url": "https://github.com/Kodrika/blog-template.git"
     },
     "main": "postcss.config.js",
     "dependencies": {
