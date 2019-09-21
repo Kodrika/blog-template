@@ -48,3 +48,8 @@ Thanks for all the tips and PR's and Vue version
 ## Copyright and License
 
 Copyright 2018-2019 Astrava.Solutions Ltd. Code released under the MIT license.
+
+
+
+## Credits
+Favicon https://www.iconfinder.com/icons/3069182/business_computer_device_office_technology_icon

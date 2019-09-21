@@ -1,2 +1,4 @@
 .idea
 node_modules
+dist/css/tailwind.min.css
+dist/css/tailwind.css
