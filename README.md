@@ -53,3 +53,4 @@ Copyright 2018-2019 Astrava.Solutions Ltd. Code released under the MIT license.
 
 ## Credits
 Favicon https://www.iconfinder.com/icons/3069182/business_computer_device_office_technology_icon
+Header Background https://graphicburger.com/seamless-polygon-backgrounds-vol2/

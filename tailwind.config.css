@@ -60,4 +60,23 @@
   * @import "utilities/background-patterns";
   * @import "utilities/skew-transforms";
   */
- 
+
+.bg-cover-green{
+ background-image:url('../images/covers/1.jpg'); height: 30vh; max-height:300px;
+}
+
+.bg-cover-blue{
+ background-image:url('../images/covers/2.jpg'); height: 30vh; max-height:300px;
+}
+
+.bg-cover-purple{
+ background-image:url('../images/covers/3.jpg'); height: 30vh; max-height:300px;
+}
+
+.bg-cover-red{
+ background-image:url('../images/covers/4.jpg'); height: 30vh; max-height:300px;
+}
+
+.bg-cover-yellow{
+ background-image:url('../images/covers/5.jpg'); height: 30vh; max-height:300px;
+}
