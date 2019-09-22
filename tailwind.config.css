@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
 /**
  * This injects Tailwind's base styles, which is a combination of
  * Normalize.css and some additional base styles.
@@ -79,4 +80,8 @@
 
 .bg-cover-yellow{
  background-image:url('../images/covers/5.jpg'); height: 30vh; max-height:300px;
+}
+
+.font-libre{
+    font-family: 'Libre Baskerville', serif;
 }
