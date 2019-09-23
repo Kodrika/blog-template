@@ -82,6 +82,10 @@
  background-image:url('../images/covers/5.jpg'); height: 30vh; max-height:300px;
 }
 
+.bg-cover-lake{
+ background-image:url('../images/covers/6.jpg'); height: 30vh; max-height:300px;
+}
+
 .font-libre{
     font-family: 'Libre Baskerville', serif;
 }
