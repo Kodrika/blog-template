@@ -93,3 +93,11 @@
 .bg-darkslategray{
  background-color: #1f2529;
 }
+
+.smooth {
+ transition: box-shadow 0.3s ease-in-out;
+}
+
+::selection{
+ background-color: aliceblue;
+}
