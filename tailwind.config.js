@@ -2,8 +2,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: theme => ({
-             'darkslategray': '#1f2529',
-      })
+             'darkslategray': '#2f3b59',
+      }),
+      colors : {
+        'darkslategray': '#2f3b59',
+      },
     }
   },
   variants: {

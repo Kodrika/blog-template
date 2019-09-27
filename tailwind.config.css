@@ -89,19 +89,3 @@
 .font-libre{
     font-family: 'Libre Baskerville', serif;
 }
-
-.bg-darkslategray{
- background-color: #1f2529;
-}
-
-.smooth {
- transition: box-shadow 0.3s ease-in-out;
-}
-
-::selection{
- background-color: aliceblue;
-}
-
-.progress-bar{
- background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);
-}
