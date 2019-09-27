@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Blog Template - Kodrika</title>
+	<meta name="description" content="Simple blog template using Tailwind CSS">
+	<meta name="author" content="Kodrika">
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<!-- Dublin Core -->
+	<meta name="dcterms.Format" content="text/html">
+	<meta name="dcterms.Language" content="en">
+	<meta name="dcterms.Identifier" content="current_url">
+	<meta name="dcterms.Relation" content="Kodrika">
+	<meta name="dcterms.Publisher" content="Kodrika">
+	<meta name="dcterms.Type" content="text/html">
+	<meta name="dcterms.Coverage" content="current_url">
+	<meta name="dcterms.Title" content="Blog Template">
+	<meta name="dcterms.Subject" content="Simple blog template using Tailwind CSS">
+	<meta name="dcterms.Contributor" content="Kodrika">
+	<meta name="dcterms.Description" content="Simple blog template using Tailwind CSS">
+	<!-- OpenGraph -->
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="current_url">
+	<meta property="og:title" content="Blog Template">
+	<meta property="og:description" content="Simple blog template using Tailwind CSS">
+	<meta property="og:image" content="facebook_image">
+	<meta property="og:site_name" content="Blog Template">
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="kodrika_yazilim">
+	<meta name="twitter:title" content="Blog Template">
+	<meta name="twitter:description" content="Simple blog template using Tailwind CSS">
+	<meta name="twitter:image" content="twitter_image">
+	<meta property="twitter:url" content="current_url" />
+	<!-- Assets -->
+	<link rel="stylesheet" href="css/tailwind.css" type="text/css">
+</head>
+<body class="bg-white font-sans leading-normal tracking-normal">
+	<!-- Navbar -->
+	<nav id="logo" class="bg-darkslategray p-4 mt-0 w-full">
+		<div class="flex flex-wrap mx-auto">
+			<div class="w-full lg:w-1/2 xl:w-1/2 my-auto hidden md:hidden lg:flex xl:flex">
+				<ul class="list-reset flex flex-1 flex-wrap items-center">
+					<li class="mr-2">
+						<a class="font-libre no-underline text-white border-b-2 border-transparent tracking-wide font-bold text-md mr-8" href="#">Blog Template</a>
+					</li>
+					<li class="mr-2">
+						<a class="font-libre no-underline text-white border-b-2 border-transparent tracking-wide font-bold text-md mr-8 hover:opacity-75" href="index.html">Home</a>
+					</li>
+					<li class="mr-2">
+						<a class="font-libre no-underline text-white border-b-2 border-transparent tracking-wide font-bold text-md mr-8 hover:opacity-75" href="about.html">About</a>
+					</li>
+					<li class="mr-2">
+						<a class="font-libre no-underline text-white border-b-2 border-transparent tracking-wide font-bold text-md mr-8 hover:opacity-75" href="#">Categories</a>
+					</li>
+					<li class="mr-2">
+						<a class="font-libre no-underline text-white border-b-2 border-transparent tracking-wide font-bold text-md mr-8 hover:opacity-75" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="w-full lg:w-1/2 xl:w-1/2 hidden md:hidden lg:flex xl:flex">
+				<div class="flex justify-end flex-1">
+					<a id="search-toggle" class="search-icon cursor-pointer inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#">
+						<i class="fa fa-search"></i>
+					</a>
+					<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#" target="_blank" rel="noopener">
+						<i class="fab fa-gitlab"></i>
+					</a>
+					<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#" target="_blank" rel="noopener">
+						<i class="fab fa-github"></i>
+					</a>
+					<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#" target="_blank" rel="noopener">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#" target="_blank" rel="noopener">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#" target="_blank" rel="noopener">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#" target="_blank" rel="noopener">
+						<i class="fa fa-rss"></i>
+					</a>
+				</div>
+			</div>
+			<div class="block lg:hidden xl:hidden w-full">
+				<p class="text-white font-extrabold text-2xl md:text-3xl font-libre float-left">
+					Blog Template
+				</p>
+				<button id="nav-toggle" class="float-right px-3 py-2 border rounded text-white border-white mb-2">
+					<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+				</button>
+			</div>
+		</div>
+	</nav>
+	<div class="hidden lg:hidden xl:hidden w-full bg-darkslategray -mt-1 rounded mb-2" id="nav-content">
+		<ul class="list-reset lg:flex justify-end flex-1 items-center">
+			<li>
+				<a class="font-libre inline-block py-2 px-4 text-white no-underline font-bold text-md" href="index.html">Homepage</a>
+			</li>
+			<li>
+				<a class="font-libre inline-block text-white no-underline py-2 px-4 font-bold text-md" href="about.html">About</a>
+			</li>
+			<li>
+				<a class="font-libre inline-block text-white no-underline py-2 px-4 font-bold text-md" href="#">Categories</a>
+			</li>
+			<li>
+				<a class="font-libre inline-block text-white no-underline py-2 px-4 font-bold text-md" href="#">Contact</a>
+			</li>
+			<li>
+				<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4" href="#" target="_blank" rel="noopener">
+					<i class="fab fa-gitlab"></i>
+				</a>
+				<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4" href="#" target="_blank" rel="noopener">
+					<i class="fab fa-github"></i>
+				</a>
+				<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4" href="#" target="_blank" rel="noopener">
+					<i class="fab fa-facebook"></i>
+				</a>
+				<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4" href="#" target="_blank" rel="noopener">
+					<i class="fab fa-twitter"></i>
+				</a>
+				<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4" href="#" target="_blank" rel="noopener">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4" href="#" target="_blank" rel="noopener">
+					<i class="fa fa-rss"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="relative w-full hidden bg-white shadow-xl rounded mb-2" id="search-content">
+		<div class="container mx-auto py-4 text-black">
+			<form action="#" method="get">
+				<input id="searchfield" type="search" name="keyword" placeholder="Search..." autofocus="autofocus"
+					   class="font-libre w-full text-grey-800 transition focus:outline-none focus:border-transparent p-2 appearance-none leading-normal text-xl lg:text-2xl" />
+			</form>
+		</div>
+	</div>
+	<!--Title-->
+	<div class="text-center pt-8 md:pt-8">
+		<h1 class="font-bold break-normal text-3xl md:text-5xl">Welcome to Ghostwind CSS</h1>
+	</div>
+	<!--Container-->
+	<div class="container max-w-5xl mx-auto">
+		<div class="mx-0 sm:mx-6">
+			<div class="bg-white w-full p-8 md:p-24 text-xl md:text-2xl text-gray-800 leading-normal rounded">
+				<p class="text-2xl md:text-3xl mb-5">
+					👋 Welcome fellow <a class="text-gray-800 hover:text-teal-500 no-underline border-b-2 border-teal-500" href="https://www.tailwindcss.com">Tailwind CSS</a> and <a class="text-gray-800 hover:text-teal-500 no-underline border-b-2 border-teal-500" href="https://www.ghost.org">Ghost</a> fan.  This starter template is an attempt to replicate the default Ghost theme <a class="text-gray-800 hover:text-teal-500 no-underline border-b-2 border-teal-500" href="https://demo.ghost.io/welcome">"Casper"</a> using Tailwind CSS and vanilla Javascript.
+				</p>
+				<p class="py-6">The basic blog page layout is available and all using the default Tailwind CSS classes (although there are a few hardcoded style tags). If you are going to use this in your project, you will want to convert the classes into components.</p>
+				<pre><code class="language-css line-numbers">p { color: red }</code></pre>
+				<p class="py-6">Sed dignissim lectus ut tincidunt vulputate. Fusce tincidunt lacus purus, in mattis tortor sollicitudin pretium. Phasellus at diam posuere, scelerisque nisl sit amet, tincidunt urna. Cras nisi diam, pulvinar ut molestie eget, eleifend ac magna. Sed at lorem condimentum, dignissim lorem eu, blandit massa. Phasellus eleifend turpis vel erat bibendum scelerisque. Maecenas id risus dictum, rhoncus odio vitae, maximus purus. Etiam efficitur dolor in dolor molestie ornare. Aenean pulvinar diam nec neque tincidunt, vitae molestie quam fermentum. Donec ac pretium diam. Suspendisse sed odio risus. Nunc nec luctus nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec nulla eget sem dictum elementum.</p>
+				<ol>
+					<li class="py-3">Maecenas accumsan lacus sit amet elementum porta. Aliquam eu libero lectus. Fusce vehicula dictum mi. In non dolor at sem ullamcorper venenatis ut sed dui. Ut ut est quam. Suspendisse quam quam, commodo sit amet placerat in, interdum a ipsum. Morbi sit amet tellus scelerisque tortor semper posuere.</li>
+					<li class="py-3">Morbi varius posuere blandit. Praesent gravida bibendum neque eget commodo. Duis auctor ornare mauris, eu accumsan odio viverra in. Proin sagittis maximus pharetra. Nullam lorem mauris, faucibus ut odio tempus, ultrices aliquet ex. Nam id quam eget ipsum luctus hendrerit. Ut eros magna, eleifend ac ornare vulputate, pretium nec felis.</li>
+					<li class="py-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc vitae pretium elit. Cras leo mauris, tristique in risus ac, tristique rutrum velit. Mauris accumsan tempor felis vitae gravida. Cras egestas convallis malesuada. Etiam ac ante id tortor vulputate pretium. Maecenas vel sapien suscipit, elementum odio et, consequat tellus.</li>
+				</ol>
+				<blockquote class="border-l-4 border-teal-500 italic my-8 pl-8 md:pl-12">Example of blockquote - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.</blockquote>
+				<p class="py-6">Example code block:</p>
+				<pre class="bg-gray-900 rounded text-white font-mono text-base p-4">
+					<code class="break-words whitespace-pre-wrap">
+&lt;header class="site-header outer"&gt;
+  &lt;div class="inner"&gt;
+    {{&gt; "site-nav"}}
+  &lt;/div&gt;
+&lt;/header&gt;
+					</code>
+				</pre>
+			</div>
+		</div>
+	</div>
+	<footer class="bg-darkslategray mt-5">
+		<div class="container max-w-6xl mx-auto flex items-center px-2 py-8">
+			<div class="w-full mx-auto flex flex-wrap items-center">
+				<div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-light text-sm  mt-2">
+					<span class="font-libre text-white"><i class="fas fa-heart text-red-400"></i> Opensource</span>
+				</div>
+				<div class="flex w-full content-center justify-between md:w-1/2 md:justify-end mt-2">
+					<ul class="list-reset flex justify-center flex-1 md:flex-none items-center">
+						<li>
+							<a href="https://kodrika.com.tr/" target="_blank">
+								<img class="opacity-25 hover:opacity-100 lazy" data-src="images/kodrika.png" alt="Kodrika Logo">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<button id="scrollToTop" class="hidden fixed right-0 bottom-0 mb-5 mr-5 bg-darkslategray font-semibold py-2 px-4 border border-white rounded">
+		<i class="fa fa-arrow-up text-white"></i>
+	</button>
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/prism.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+	<script async src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+	<script src="js/prism.js" type="application/javascript"></script>
+	<script src="js/app.js" type="application/javascript"></script>
+</body>
+</html>
