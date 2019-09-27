@@ -39,3 +39,24 @@ function checkParent(t, elm) {
     }
     return false;
 }
+/* Scroll To Top */
+var your_header        = document.getElementById('logo'),
+    scroll_to_top   = document.getElementById('scrollToTop');
+window.onscroll = function(ev) {
+    var  scrollTop = window.pageYOffset || document.body.scrollTop;
+    if (scrollTop > your_header.offsetHeight + 100) {
+        scroll_to_top.style.display = 'block';
+    }else{
+        scroll_to_top.style.display = 'none';
+    }
+};
+scroll_to_top.onclick = function () {
+    scrollTo(your_header);
+};
+function scrollTo(element) {
+    window.scroll({
+        behavior: 'smooth',
+        left: 0,
+        top: element.offsetTop
+    });
+}

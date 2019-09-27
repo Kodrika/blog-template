@@ -105,7 +105,3 @@
 .progress-bar{
  background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);
 }
-
-.darkslategray{
- color: #1f2529;
-}
