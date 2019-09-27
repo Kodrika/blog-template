@@ -154,7 +154,8 @@
 		<h1 class="font-bold break-normal text-3xl md:text-5xl">Welcome to Ghostwind CSS</h1>
 	</div>
 	<!--image-->
-	<div class="container w-full max-w-6xl mx-auto bg-white bg-cover mt-8 rounded" style="background-image:url('https://source.unsplash.com/collection/1118905/'); height: 75vh;"></div>
+	<div class="container w-full max-w-6xl mx-auto bg-white bg-cover mt-8 rounded"
+		 style="background-image:url('https://source.unsplash.com/collection/1118905/'); height: 75vh;"></div>
 	<!--Container-->
 	<div class="container max-w-5xl mx-auto -mt-32">
 		<div class="mx-0 sm:mx-6">
@@ -191,7 +192,7 @@
 					<div class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
 						<a href="post.html" class="no-underline hover:no-underline">
 							<div class="flex-1 bg-white rounded overflow-hidden shadow-lg">
-								<img src="https://source.unsplash.com/collection/225/800x600" class="h-64 w-full rounded-t pb-6" />
+								<img data-src="https://source.unsplash.com/collection/225/800x600" class="h-64 w-full rounded-t pb-6 lazy" />
 								<p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
 								<div class="font-libre w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
 								<p class="text-gray-800 font-serif text-base px-6 mb-5">
@@ -211,7 +212,7 @@
 					<div class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
 						<a href="post.html" class="no-underline hover:no-underline">
 							<div class="flex-1 bg-white rounded overflow-hidden shadow-lg">
-								<img src="https://source.unsplash.com/collection/225/800x600" class="h-64 w-full rounded-t pb-6" />
+								<img data-src="https://source.unsplash.com/collection/225/800x600" class="h-64 w-full rounded-t pb-6 lazy" />
 								<p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
 								<div class="font-libre w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
 								<p class="text-gray-800 font-serif text-base px-6 mb-5">
@@ -231,7 +232,7 @@
 					<div class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
 						<a href="post.html" class="no-underline hover:no-underline">
 							<div class="flex-1 bg-white rounded overflow-hidden shadow-lg">
-								<img src="https://source.unsplash.com/collection/225/800x600" class="h-64 w-full rounded-t pb-6" />
+								<img data-src="https://source.unsplash.com/collection/225/800x600" class="h-64 w-full rounded-t pb-6 lazy" />
 								<p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
 								<div class="font-libre w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
 								<p class="text-gray-800 font-serif text-base px-6 mb-5">
@@ -260,7 +261,7 @@
 					<ul class="list-reset flex justify-center flex-1 md:flex-none items-center">
 						<li>
 							<a href="https://kodrika.com.tr/" target="_blank">
-								<img class="opacity-25 hover:opacity-100" src="images/kodrika.png" alt="Kodrika Logo">
+								<img class="opacity-25 hover:opacity-100 lazy" data-src="images/kodrika.png" alt="Kodrika Logo">
 							</a>
 						</li>
 					</ul>
@@ -274,6 +275,7 @@
 	<link href="css/animate.min.css" rel="stylesheet">
 	<link href="css/prism.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+	<script async src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
 	<script src="js/prism.js" type="application/javascript"></script>
 	<script src="js/app.js" type="application/javascript"></script>
 </body>

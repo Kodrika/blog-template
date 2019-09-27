@@ -60,3 +60,7 @@ function scrollTo(element) {
         top: element.offsetTop
     });
 }
+/* Lazyload */
+window.lazyLoadOptions = {
+    elements_selector: ".lazy",
+};
