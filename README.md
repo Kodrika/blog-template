@@ -18,7 +18,7 @@ This template is a modified version of the [Ghostwind Template](https://www.tail
 ## Getting Started
 
 Choose one of the following options to get started:
-* [Download the latest release](#)
+* [Download the latest release](https://github.com/Kodrika/blog-template/archive/v1.0.zip)
 * Clone the repo: `git clone https://github.com/Kodrika/blog-template.git`
 * Fork the repo
 
