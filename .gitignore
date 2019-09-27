@@ -2,3 +2,4 @@
 node_modules
 dist/css/tailwind.min.css
 dist/css/tailwind.css
+package-lock.json
