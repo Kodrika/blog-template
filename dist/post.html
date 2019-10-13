@@ -46,211 +46,215 @@
 	<!-- Assets -->
 	<link rel="stylesheet" href="css/tailwind.min.css" type="text/css">
 </head>
-<body class="bg-white font-sans leading-normal tracking-normal">
-	<!-- Navbar -->
-	<nav id="logo" class="bg-darkslategray p-4 mt-0 w-full">
-		<div class="flex flex-wrap mx-auto">
-			<div class="w-full lg:w-1/2 xl:w-1/2 my-auto hidden md:hidden lg:flex xl:flex">
-				<ul class="list-reset flex flex-1 flex-wrap items-center">
-					<li class="mr-2">
-						<a class="font-libre no-underline text-white border-b-2 border-transparent tracking-wide font-bold text-md mr-8" href="#">Blog Template</a>
-					</li>
-					<li class="mr-2">
-						<a class="font-libre no-underline text-white border-b-2 border-transparent tracking-wide font-bold text-md mr-8 hover:opacity-75" href="index.html">Home</a>
-					</li>
-					<li class="mr-2">
-						<a class="font-libre no-underline text-white border-b-2 border-transparent tracking-wide font-bold text-md mr-8 hover:opacity-75" href="about.html">About</a>
-					</li>
-					<li class="mr-2">
-						<a class="font-libre no-underline text-white border-b-2 border-transparent tracking-wide font-bold text-md mr-8 hover:opacity-75" href="#">Categories</a>
-					</li>
-					<li class="mr-2">
-						<a class="font-libre no-underline text-white border-b-2 border-transparent tracking-wide font-bold text-md mr-8 hover:opacity-75" href="contact.html">Contact</a>
-					</li>
-				</ul>
+<body class="bg-white font-sans leading-normal tracking-normal flex min-vh-100 flex-col min-h-screen">
+	<header>
+		<!-- Navbar -->
+		<nav id="logo" class="bg-darkslategray p-4 mt-0 w-full">
+			<div class="flex flex-wrap mx-auto">
+				<div class="w-full lg:w-1/2 xl:w-1/2 my-auto hidden md:hidden lg:flex xl:flex">
+					<ul class="list-reset flex flex-1 flex-wrap items-center">
+						<li class="mr-2">
+							<a class="font-libre no-underline text-white border-b-2 border-transparent tracking-wide font-bold text-md mr-8" href="#">Blog Template</a>
+						</li>
+						<li class="mr-2">
+							<a class="font-libre no-underline text-white border-b-2 border-transparent tracking-wide font-bold text-md mr-8 hover:opacity-75" href="index.html">Home</a>
+						</li>
+						<li class="mr-2">
+							<a class="font-libre no-underline text-white border-b-2 border-transparent tracking-wide font-bold text-md mr-8 hover:opacity-75" href="about.html">About</a>
+						</li>
+						<li class="mr-2">
+							<a class="font-libre no-underline text-white border-b-2 border-transparent tracking-wide font-bold text-md mr-8 hover:opacity-75" href="#">Categories</a>
+						</li>
+						<li class="mr-2">
+							<a class="font-libre no-underline text-white border-b-2 border-transparent tracking-wide font-bold text-md mr-8 hover:opacity-75" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<div class="w-full lg:w-1/2 xl:w-1/2 hidden md:hidden lg:flex xl:flex">
+					<div class="flex justify-end flex-1">
+						<a id="search-toggle" class="search-icon cursor-pointer inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#">
+							<i class="fa fa-search"></i>
+						</a>
+						<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#" target="_blank" rel="noopener">
+							<i class="fab fa-gitlab"></i>
+						</a>
+						<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#" target="_blank" rel="noopener">
+							<i class="fab fa-github"></i>
+						</a>
+						<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#" target="_blank" rel="noopener">
+							<i class="fab fa-facebook"></i>
+						</a>
+						<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#" target="_blank" rel="noopener">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#" target="_blank" rel="noopener">
+							<i class="fab fa-linkedin"></i>
+						</a>
+						<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#" target="_blank" rel="noopener">
+							<i class="fa fa-rss"></i>
+						</a>
+					</div>
+				</div>
+				<div class="block lg:hidden xl:hidden w-full">
+					<p class="text-white font-extrabold text-2xl md:text-3xl font-libre float-left">
+						Blog Template
+					</p>
+					<button id="nav-toggle" class="float-right px-3 py-2 border rounded text-white border-white mb-2">
+						<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+					</button>
+				</div>
 			</div>
-			<div class="w-full lg:w-1/2 xl:w-1/2 hidden md:hidden lg:flex xl:flex">
-				<div class="flex justify-end flex-1">
-					<a id="search-toggle" class="search-icon cursor-pointer inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#">
-						<i class="fa fa-search"></i>
-					</a>
-					<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#" target="_blank" rel="noopener">
+		</nav>
+		<div class="hidden lg:hidden xl:hidden w-full bg-darkslategray -mt-1 rounded mb-2" id="nav-content">
+			<ul class="list-reset lg:flex justify-end flex-1 items-center">
+				<li>
+					<a class="font-libre inline-block py-2 px-4 text-white no-underline font-bold text-md" href="index.html">Homepage</a>
+				</li>
+				<li>
+					<a class="font-libre inline-block text-white no-underline py-2 px-4 font-bold text-md" href="about.html">About</a>
+				</li>
+				<li>
+					<a class="font-libre inline-block text-white no-underline py-2 px-4 font-bold text-md" href="#">Categories</a>
+				</li>
+				<li>
+					<a class="font-libre inline-block text-white no-underline py-2 px-4 font-bold text-md" href="contact.html">Contact</a>
+				</li>
+				<li>
+					<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4" href="#" target="_blank" rel="noopener">
 						<i class="fab fa-gitlab"></i>
 					</a>
-					<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#" target="_blank" rel="noopener">
+					<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4" href="#" target="_blank" rel="noopener">
 						<i class="fab fa-github"></i>
 					</a>
-					<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#" target="_blank" rel="noopener">
+					<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4" href="#" target="_blank" rel="noopener">
 						<i class="fab fa-facebook"></i>
 					</a>
-					<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#" target="_blank" rel="noopener">
+					<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4" href="#" target="_blank" rel="noopener">
 						<i class="fab fa-twitter"></i>
 					</a>
-					<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#" target="_blank" rel="noopener">
+					<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4" href="#" target="_blank" rel="noopener">
 						<i class="fab fa-linkedin"></i>
 					</a>
-					<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 hover:opacity-75" href="#" target="_blank" rel="noopener">
+					<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4" href="#" target="_blank" rel="noopener">
 						<i class="fa fa-rss"></i>
 					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="relative w-full hidden bg-white shadow-xl rounded mb-2" id="search-content">
+			<div class="container mx-auto py-4 text-black">
+				<form action="#" method="get">
+					<input id="searchfield" type="search" name="keyword" placeholder="Search..." autofocus="autofocus"
+						   class="font-libre w-full text-grey-800 transition focus:outline-none focus:border-transparent p-2 appearance-none leading-normal text-xl lg:text-2xl" />
+				</form>
+			</div>
+		</div>
+	</header>
+	<main class="flex-1">
+		<!--Title-->
+		<div class="text-center pt-8 md:pt-8">
+			<p class="text-sm md:text-base text-darkslategray font-bold">08 April 2019 <span class="text-black">/</span> <a href="#" class="no-underline hover:opacity-25">GETTING STARTED</a> </p>
+			<h1 class="font-bold break-normal text-3xl md:text-5xl">Welcome to Ghostwind CSS</h1>
+		</div>
+		<!--image-->
+		<div class="container w-full max-w-6xl mx-auto bg-white bg-cover mt-8 rounded"
+			 style="background-image:url('https://source.unsplash.com/collection/1118905/'); height: 75vh;"></div>
+		<!--Container-->
+		<div class="container max-w-5xl mx-auto -mt-32">
+			<div class="mx-0 sm:mx-6">
+				<div class="bg-white w-full p-8 md:p-24 text-xl md:text-2xl text-gray-800 leading-normal rounded">
+					<p class="text-2xl md:text-3xl mb-5">
+						👋 Welcome fellow <a class="text-gray-800 hover:text-teal-500 no-underline border-b-2 border-teal-500" href="https://www.tailwindcss.com">Tailwind CSS</a> and <a class="text-gray-800 hover:text-teal-500 no-underline border-b-2 border-teal-500" href="https://www.ghost.org">Ghost</a> fan.  This starter template is an attempt to replicate the default Ghost theme <a class="text-gray-800 hover:text-teal-500 no-underline border-b-2 border-teal-500" href="https://demo.ghost.io/welcome">"Casper"</a> using Tailwind CSS and vanilla Javascript.
+					</p>
+					<p class="py-6">The basic blog page layout is available and all using the default Tailwind CSS classes (although there are a few hardcoded style tags). If you are going to use this in your project, you will want to convert the classes into components.</p>
+					<pre><code class="language-css line-numbers">p { color: red }</code></pre>
+					<p class="py-6">Sed dignissim lectus ut tincidunt vulputate. Fusce tincidunt lacus purus, in mattis tortor sollicitudin pretium. Phasellus at diam posuere, scelerisque nisl sit amet, tincidunt urna. Cras nisi diam, pulvinar ut molestie eget, eleifend ac magna. Sed at lorem condimentum, dignissim lorem eu, blandit massa. Phasellus eleifend turpis vel erat bibendum scelerisque. Maecenas id risus dictum, rhoncus odio vitae, maximus purus. Etiam efficitur dolor in dolor molestie ornare. Aenean pulvinar diam nec neque tincidunt, vitae molestie quam fermentum. Donec ac pretium diam. Suspendisse sed odio risus. Nunc nec luctus nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec nulla eget sem dictum elementum.</p>
+					<ol>
+						<li class="py-3">Maecenas accumsan lacus sit amet elementum porta. Aliquam eu libero lectus. Fusce vehicula dictum mi. In non dolor at sem ullamcorper venenatis ut sed dui. Ut ut est quam. Suspendisse quam quam, commodo sit amet placerat in, interdum a ipsum. Morbi sit amet tellus scelerisque tortor semper posuere.</li>
+						<li class="py-3">Morbi varius posuere blandit. Praesent gravida bibendum neque eget commodo. Duis auctor ornare mauris, eu accumsan odio viverra in. Proin sagittis maximus pharetra. Nullam lorem mauris, faucibus ut odio tempus, ultrices aliquet ex. Nam id quam eget ipsum luctus hendrerit. Ut eros magna, eleifend ac ornare vulputate, pretium nec felis.</li>
+						<li class="py-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc vitae pretium elit. Cras leo mauris, tristique in risus ac, tristique rutrum velit. Mauris accumsan tempor felis vitae gravida. Cras egestas convallis malesuada. Etiam ac ante id tortor vulputate pretium. Maecenas vel sapien suscipit, elementum odio et, consequat tellus.</li>
+					</ol>
+					<blockquote class="border-l-4 border-teal-500 italic my-8 pl-8 md:pl-12">Example of blockquote - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.</blockquote>
+					<p class="py-6">Example code block:</p>
+					<pre class="bg-gray-900 rounded text-white font-mono text-base p-4">
+						<code class="break-words whitespace-pre-wrap">
+	&lt;header class="site-header outer"&gt;
+	  &lt;div class="inner"&gt;
+		Nav
+	  &lt;/div&gt;
+	&lt;/header&gt;
+						</code>
+					</pre>
 				</div>
 			</div>
-			<div class="block lg:hidden xl:hidden w-full">
-				<p class="text-white font-extrabold text-2xl md:text-3xl font-libre float-left">
-					Blog Template
-				</p>
-				<button id="nav-toggle" class="float-right px-3 py-2 border rounded text-white border-white mb-2">
-					<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-				</button>
-			</div>
 		</div>
-	</nav>
-	<div class="hidden lg:hidden xl:hidden w-full bg-darkslategray -mt-1 rounded mb-2" id="nav-content">
-		<ul class="list-reset lg:flex justify-end flex-1 items-center">
-			<li>
-				<a class="font-libre inline-block py-2 px-4 text-white no-underline font-bold text-md" href="index.html">Homepage</a>
-			</li>
-			<li>
-				<a class="font-libre inline-block text-white no-underline py-2 px-4 font-bold text-md" href="about.html">About</a>
-			</li>
-			<li>
-				<a class="font-libre inline-block text-white no-underline py-2 px-4 font-bold text-md" href="#">Categories</a>
-			</li>
-			<li>
-				<a class="font-libre inline-block text-white no-underline py-2 px-4 font-bold text-md" href="contact.html">Contact</a>
-			</li>
-			<li>
-				<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4" href="#" target="_blank" rel="noopener">
-					<i class="fab fa-gitlab"></i>
-				</a>
-				<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4" href="#" target="_blank" rel="noopener">
-					<i class="fab fa-github"></i>
-				</a>
-				<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4" href="#" target="_blank" rel="noopener">
-					<i class="fab fa-facebook"></i>
-				</a>
-				<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4" href="#" target="_blank" rel="noopener">
-					<i class="fab fa-twitter"></i>
-				</a>
-				<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4" href="#" target="_blank" rel="noopener">
-					<i class="fab fa-linkedin"></i>
-				</a>
-				<a class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4" href="#" target="_blank" rel="noopener">
-					<i class="fa fa-rss"></i>
-				</a>
-			</li>
-		</ul>
-	</div>
-	<div class="relative w-full hidden bg-white shadow-xl rounded mb-2" id="search-content">
-		<div class="container mx-auto py-4 text-black">
-			<form action="#" method="get">
-				<input id="searchfield" type="search" name="keyword" placeholder="Search..." autofocus="autofocus"
-					   class="font-libre w-full text-grey-800 transition focus:outline-none focus:border-transparent p-2 appearance-none leading-normal text-xl lg:text-2xl" />
-			</form>
-		</div>
-	</div>
-	<!--Title-->
-	<div class="text-center pt-8 md:pt-8">
-		<p class="text-sm md:text-base text-darkslategray font-bold">08 April 2019 <span class="text-black">/</span> <a href="#" class="no-underline hover:opacity-25">GETTING STARTED</a> </p>
-		<h1 class="font-bold break-normal text-3xl md:text-5xl">Welcome to Ghostwind CSS</h1>
-	</div>
-	<!--image-->
-	<div class="container w-full max-w-6xl mx-auto bg-white bg-cover mt-8 rounded"
-		 style="background-image:url('https://source.unsplash.com/collection/1118905/'); height: 75vh;"></div>
-	<!--Container-->
-	<div class="container max-w-5xl mx-auto -mt-32">
-		<div class="mx-0 sm:mx-6">
-			<div class="bg-white w-full p-8 md:p-24 text-xl md:text-2xl text-gray-800 leading-normal rounded">
-				<p class="text-2xl md:text-3xl mb-5">
-					👋 Welcome fellow <a class="text-gray-800 hover:text-teal-500 no-underline border-b-2 border-teal-500" href="https://www.tailwindcss.com">Tailwind CSS</a> and <a class="text-gray-800 hover:text-teal-500 no-underline border-b-2 border-teal-500" href="https://www.ghost.org">Ghost</a> fan.  This starter template is an attempt to replicate the default Ghost theme <a class="text-gray-800 hover:text-teal-500 no-underline border-b-2 border-teal-500" href="https://demo.ghost.io/welcome">"Casper"</a> using Tailwind CSS and vanilla Javascript.
-				</p>
-				<p class="py-6">The basic blog page layout is available and all using the default Tailwind CSS classes (although there are a few hardcoded style tags). If you are going to use this in your project, you will want to convert the classes into components.</p>
-				<pre><code class="language-css line-numbers">p { color: red }</code></pre>
-				<p class="py-6">Sed dignissim lectus ut tincidunt vulputate. Fusce tincidunt lacus purus, in mattis tortor sollicitudin pretium. Phasellus at diam posuere, scelerisque nisl sit amet, tincidunt urna. Cras nisi diam, pulvinar ut molestie eget, eleifend ac magna. Sed at lorem condimentum, dignissim lorem eu, blandit massa. Phasellus eleifend turpis vel erat bibendum scelerisque. Maecenas id risus dictum, rhoncus odio vitae, maximus purus. Etiam efficitur dolor in dolor molestie ornare. Aenean pulvinar diam nec neque tincidunt, vitae molestie quam fermentum. Donec ac pretium diam. Suspendisse sed odio risus. Nunc nec luctus nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec nulla eget sem dictum elementum.</p>
-				<ol>
-					<li class="py-3">Maecenas accumsan lacus sit amet elementum porta. Aliquam eu libero lectus. Fusce vehicula dictum mi. In non dolor at sem ullamcorper venenatis ut sed dui. Ut ut est quam. Suspendisse quam quam, commodo sit amet placerat in, interdum a ipsum. Morbi sit amet tellus scelerisque tortor semper posuere.</li>
-					<li class="py-3">Morbi varius posuere blandit. Praesent gravida bibendum neque eget commodo. Duis auctor ornare mauris, eu accumsan odio viverra in. Proin sagittis maximus pharetra. Nullam lorem mauris, faucibus ut odio tempus, ultrices aliquet ex. Nam id quam eget ipsum luctus hendrerit. Ut eros magna, eleifend ac ornare vulputate, pretium nec felis.</li>
-					<li class="py-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc vitae pretium elit. Cras leo mauris, tristique in risus ac, tristique rutrum velit. Mauris accumsan tempor felis vitae gravida. Cras egestas convallis malesuada. Etiam ac ante id tortor vulputate pretium. Maecenas vel sapien suscipit, elementum odio et, consequat tellus.</li>
-				</ol>
-				<blockquote class="border-l-4 border-teal-500 italic my-8 pl-8 md:pl-12">Example of blockquote - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.</blockquote>
-				<p class="py-6">Example code block:</p>
-				<pre class="bg-gray-900 rounded text-white font-mono text-base p-4">
-					<code class="break-words whitespace-pre-wrap">
-&lt;header class="site-header outer"&gt;
-  &lt;div class="inner"&gt;
-    {{&gt; "site-nav"}}
-  &lt;/div&gt;
-&lt;/header&gt;
-					</code>
-				</pre>
-			</div>
-		</div>
-	</div>
-	<div class="bg-gray-200">
-		<div class="container w-full max-w-6xl mx-auto px-2 py-8">
-			<div class="flex flex-wrap -mx-2">
-				<div class="w-full md:w-1/3 px-2 pb-12">
-					<div class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
-						<a href="post.html" class="no-underline hover:no-underline">
-							<div class="flex-1 bg-white rounded overflow-hidden shadow-lg">
-								<img data-src="https://source.unsplash.com/collection/225/800x600" class="h-64 w-full rounded-t pb-6 lazy" alt="Detail" />
-								<p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
-								<div class="font-libre w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
-								<p class="text-gray-800 font-serif text-base px-6 mb-5">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-								</p>
-							</div>
-							<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6 border-t border-gray-300">
-								<div class="flex items-center justify-between">
-									<p class="text-gray-600 text-xs md:text-sm">4 months ago</p>
-									<p class="text-gray-600 text-xs md:text-sm">1 Min Read</p>
+		<div class="bg-gray-200">
+			<div class="container w-full max-w-6xl mx-auto px-2 py-8">
+				<div class="flex flex-wrap -mx-2">
+					<div class="w-full md:w-1/3 px-2 pb-12">
+						<div class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
+							<a href="post.html" class="no-underline hover:no-underline">
+								<div class="flex-1 bg-white rounded overflow-hidden shadow-lg">
+									<img data-src="https://source.unsplash.com/collection/225/800x600" class="h-64 w-full rounded-t pb-6 lazy" alt="Detail" />
+									<p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
+									<div class="font-libre w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
+									<p class="text-gray-800 font-serif text-base px-6 mb-5">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+									</p>
 								</div>
-							</div>
-						</a>
+								<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6 border-t border-gray-300">
+									<div class="flex items-center justify-between">
+										<p class="text-gray-600 text-xs md:text-sm">4 months ago</p>
+										<p class="text-gray-600 text-xs md:text-sm">1 Min Read</p>
+									</div>
+								</div>
+							</a>
+						</div>
 					</div>
-				</div>
-				<div class="w-full md:w-1/3 px-2 pb-12">
-					<div class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
-						<a href="post.html" class="no-underline hover:no-underline">
-							<div class="flex-1 bg-white rounded overflow-hidden shadow-lg">
-								<img data-src="https://source.unsplash.com/collection/225/800x600" class="h-64 w-full rounded-t pb-6 lazy" alt="Detail" />
-								<p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
-								<div class="font-libre w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
-								<p class="text-gray-800 font-serif text-base px-6 mb-5">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-								</p>
-							</div>
-							<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6 border-t border-gray-300">
-								<div class="flex items-center justify-between">
-									<p class="text-gray-600 text-xs md:text-sm">4 months ago</p>
-									<p class="text-gray-600 text-xs md:text-sm">1 Min Read</p>
+					<div class="w-full md:w-1/3 px-2 pb-12">
+						<div class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
+							<a href="post.html" class="no-underline hover:no-underline">
+								<div class="flex-1 bg-white rounded overflow-hidden shadow-lg">
+									<img data-src="https://source.unsplash.com/collection/225/800x600" class="h-64 w-full rounded-t pb-6 lazy" alt="Detail" />
+									<p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
+									<div class="font-libre w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
+									<p class="text-gray-800 font-serif text-base px-6 mb-5">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+									</p>
 								</div>
-							</div>
-						</a>
+								<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6 border-t border-gray-300">
+									<div class="flex items-center justify-between">
+										<p class="text-gray-600 text-xs md:text-sm">4 months ago</p>
+										<p class="text-gray-600 text-xs md:text-sm">1 Min Read</p>
+									</div>
+								</div>
+							</a>
+						</div>
 					</div>
-				</div>
-				<div class="w-full md:w-1/3 px-2 pb-12">
-					<div class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
-						<a href="post.html" class="no-underline hover:no-underline">
-							<div class="flex-1 bg-white rounded overflow-hidden shadow-lg">
-								<img data-src="https://source.unsplash.com/collection/225/800x600" class="h-64 w-full rounded-t pb-6 lazy" alt="Detail" />
-								<p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
-								<div class="font-libre w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
-								<p class="text-gray-800 font-serif text-base px-6 mb-5">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-								</p>
-							</div>
-							<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6 border-t border-gray-300">
-								<div class="flex items-center justify-between">
-									<p class="text-gray-600 text-xs md:text-sm">4 months ago</p>
-									<p class="text-gray-600 text-xs md:text-sm">1 Min Read</p>
+					<div class="w-full md:w-1/3 px-2 pb-12">
+						<div class="h-full bg-white rounded overflow-hidden shadow-md hover:shadow-lg relative smooth">
+							<a href="post.html" class="no-underline hover:no-underline">
+								<div class="flex-1 bg-white rounded overflow-hidden shadow-lg">
+									<img data-src="https://source.unsplash.com/collection/225/800x600" class="h-64 w-full rounded-t pb-6 lazy" alt="Detail" />
+									<p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
+									<div class="font-libre w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
+									<p class="text-gray-800 font-serif text-base px-6 mb-5">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+									</p>
 								</div>
-							</div>
-						</a>
+								<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6 border-t border-gray-300">
+									<div class="flex items-center justify-between">
+										<p class="text-gray-600 text-xs md:text-sm">4 months ago</p>
+										<p class="text-gray-600 text-xs md:text-sm">1 Min Read</p>
+									</div>
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</main>
 	<footer class="bg-darkslategray mt-5">
 		<div class="container max-w-6xl mx-auto flex items-center px-2 py-8">
 			<div class="w-full mx-auto flex flex-wrap items-center">
